@@ -1,1 +1,2 @@
-# 2026-primer-repositorio
+# 2026-primer-repos
+Julian Trillo
