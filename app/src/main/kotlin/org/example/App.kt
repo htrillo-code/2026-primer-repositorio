@@ -22,4 +22,5 @@ fun main() {
     
     complejo.valor(3, 4)      // Le das los valores
     println(complejo.mostrar()) // ¡Imprimes el resultado!
+    println("hola paput") // ¡Imprimes el resultado!
 }
