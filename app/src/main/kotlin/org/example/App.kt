@@ -1,26 +1,31 @@
-package org.example // 1. Siempre la primera línea
+package org.example
 
-// 2. Definición de la clase (El Molde)
-class Complejo {
-    private var reales: Int = 0
-    private var imaginarios: Int = 0
-
-    fun valor(reales: Int, imaginarios: Int) {
-        this.reales = reales
-        this.imaginarios = imaginarios
+class Complejo(private var real: Int=0, private var imag: Int=0) {
+    fun inicializar(real:Int,imag:Int){
+        this.real=real
+        this.imag=imag
     }
-
-    fun mostrar(): String {
-        return "($reales, $imaginarios)"
+    fun mostrar(){
+        println(this.toString())
+    }
+    override fun toString():String{
+        return "(${real},${imag})"
+    }
+    fun restar(otro: Complejo): Complejo {
+        return Complejo(
+            real - otro.real,
+            imag - otro.imag
+        )
     }
 }
 
-// 3. El punto de inicio (Donde usas el molde)
 fun main() {
-    var complejo: Complejo    // Reservas el nombre
-    complejo = Complejo()     // Fabricas el objeto real
-    
-    complejo.valor(3, 4)      // Le das los valores
-    println(complejo.mostrar()) // ¡Imprimes el resultado!
-    println("tururum o ya ppepo ah") // ¡Imprimes el resultado!
+    var complejo: Complejo
+    complejo= Complejo()
+    complejo.inicializar(3,4)
+    println("mi número complejo es ${complejo.toString()}")
+    var c2:Complejo= Complejo(1,2)
+    var c3:Complejo
+    c3=complejo.restar(c2)
+    c3.mostrar()
 }
