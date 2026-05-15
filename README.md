@@ -1,3 +1,4 @@
+
 # 2026-numeros-complejos   AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 # Clase Complejo - Ejercicio AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -24,3 +25,7 @@ c = Complejo(3, 4)
 print(c.mostrar())  # Salida: (3, 4)
 ```     
 este si loquillo jojojo
+
+# 2026-primer-repos
+Julian Trillo
+
